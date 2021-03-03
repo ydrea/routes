@@ -8,7 +8,7 @@
 export default {
 data () {
     return {
-        stvor: [
+        stvorovi: [
             {ko: 'medo', di: 'usumu', id: 1},
             {ko: 'zeko', di: 'uvrtu', id: 2},
             {ko: 'jede', di: 'mukve', id: 3},
