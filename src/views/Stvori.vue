@@ -11,7 +11,7 @@ data () {
         stvorovi: [
             {ko: 'medo', di: 'usumu', id: 1},
             {ko: 'zeko', di: 'uvrtu', id: 2},
-            {ko: 'jede', di: 'mukve', id: 3},
+            {ko: 'jede', di: 'mukvice', id: 3},
         ]
     }
 }
