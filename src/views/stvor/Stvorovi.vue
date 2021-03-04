@@ -1,16 +1,24 @@
 <template>
-  <div>
-       Koji je ovo param? {{ id }} </div>
+  <div v-if="stvorovi">
+       Koji je ovo param? {{ id }} , {{ stvorovi.ko }}, {{ stvorovi.di }} 
+       
+  </div>
 </template>
 
 <script>
 export default {
+    props: ['id'],
     data() {
         return {
-            
-            id: this.$route.params.id
+          stvorovi: null
         }
-    }
+    },
+    
+mounted() {
+  fetch ('http://localhost:3000/stvorovi/' + this.id)
+  .then(res => res.json())
+  .then(data => this.stvorovi = data)
+},
 }
 </script>
 

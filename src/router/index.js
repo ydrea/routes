@@ -1,6 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '../views/Home.vue'
-import Stvori from '../views/Stvori.vue'
+import Stvori from '../views/stvor/Stvori.vue'
+import Stvorovi from '../views/stvor/Stvorovi.vue'
 
 const routes = [
   {
@@ -9,9 +10,15 @@ const routes = [
     component: Home
   },
   {
-    path: '/stvori',
+    path: '/stvor',
     name: 'Stvori',
     component: Stvori
+  },
+  {
+    path: '/stvor/:id',
+    name: 'Stvorovi',
+    component: Stvorovi,
+    props: true
   },
   {
     path: '/about',
